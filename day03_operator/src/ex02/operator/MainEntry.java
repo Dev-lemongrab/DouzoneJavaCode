@@ -1,4 +1,4 @@
-//*
+/*
 package ex02.operator;
 
 public class MainEntry {
@@ -14,11 +14,26 @@ public class MainEntry {
 	}
 }
 //*/
-/*
+//*
 package ex02.operator;
 
 public class MainEntry {
 	public static void main(String[] args) {
+		//관계연산자 >,<,>=,<=,==(같다), !=(같지않다)
+		int x = 20, y = 20;
+		if(x!=y)
+			System.out.println("같지않습니다.");
+		else 
+			System.out.println("같습니다.");
+		
+		//삼항연산자 :(조건)? 참 : 거짓;
+		String msg = null; //msg = "";
+		msg =(x!=y)? "같지 않습니다.": "같습니다.";
+		System.out.println(msg);
+		int a = 10, b = 20, c = 30;
+		int result;
+		result =(a>b)? b+c: a+c;
+		System.out.println(result);
 		
 	}
 }
