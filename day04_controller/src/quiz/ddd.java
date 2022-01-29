@@ -1,16 +1,71 @@
 package quiz;
 
-public class ddd {
+import java.util.Scanner;
 
+public class ddd {
+	private static String [][] star;
 	public static void main(String[] args) {
-//		재귀적인 패턴으로 별을 찍어 보자. N이 3의 거듭제곱(3, 9, 27, ...)이라고 할 때, 크기 N의 패턴은 N×N 정사각형 모양이다.
-//
-//		크기 3의 패턴은 가운데에 공백이 있고, 가운데를 제외한 모든 칸에 별이 하나씩 있는 패턴이다.
-//
-//		***
-//		* *
-//		***
-//		N이 3보다 클 경우, 크기 N의 패턴은 공백으로 채워진 가운데의 (N/3)×(N/3) 정사각형을 크기 N/3의 패턴으로 둘러싼 형태이다. 예를 들어 크기 27의 패턴은 예제 출력 1과 같다.
+		Scanner sc = new Scanner(System.in);
+		//1, 5, 9, 13,...
+		//1+(N-1)*4;
+		int N = sc.nextInt();
+		star = new String[2*(1+(N-1)*4)][(1+(N-1)*4)];//2 [5][10];
+		
+		for(int i = 0 ; i < star.length; i++) {
+			for(int j = 0; j < star[i].length ; j ++) {
+				star[i][j] = " ";
+			}
+		}
+		
+		int startI = 0, startJ = 0;
+		star(N, startI, startJ);
+		
+		
+		for(int i = 0 ; i < star.length; i++) {
+			for(int j = 0; j < star[i].length ; j ++) {
+				System.out.print(star[i][j]);
+			}
+			System.out.println();
+		}
+		//5 -> 10
 	}
+	public static void star(int N, int startI, int startJ) {
+		if(N==1) {
+			star[startI][startJ] = "*";
+			return;
+		}else {
+			for(int i = startI ; i<2*(1+(N-1)*4); i++) {//3이면 9 012345678 0123456789 1011121314151617
+				for(int j = startJ; j<1+(N-1)*4; j++) {
+					if(i==startI||i==2*(1+(N-1)*4)-1) star[i][j] = "*";
+					else {
+						if(i%2!=0) {}
+						else if(j==startJ||j==(N-1)*4) star[i][j] = "*";
+					}
+					
+				}
+			}
+			star(N-1, startI+4, startJ+2);
+		
+		
+	}
+	
+//	public static void main(String[] args) {
+		
+//		for(int i = 0 ; i < star.length ; i ++) {
+//			for(int j = 0; j < star[i].length ;j ++) {
+//				star[i][j] = " ";
+//			}
+//		}
+//		for(int i = 0 ; i < 5 ; i +=2) {
+//			for(int j = 0; j < 5 ;j ++) {
+//				if(i==0||i==4)
+//					star[i][j] = "*";
+//				else star[i][j] = "*";
+//			}
+//		}
+	}
+	
+	
+	
 
 }
