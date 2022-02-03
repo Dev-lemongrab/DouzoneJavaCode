@@ -26,8 +26,6 @@ public class QuizEx01 {
 		for(int i = 0; i <dailyRain.length;i++) {
 			avg += dailyRain[i]/NUM;
 		}
-		//문제 3 성적표 프로그램 작성(배열 이용)
-		//이름, 국어, 영어, 전산 점수 입력 받아서 총점/평균/학점 구하는 프로그램작
-		
+
 	}
 }

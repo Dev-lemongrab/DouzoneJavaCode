@@ -9,7 +9,7 @@ public class ddd {
 		//1, 5, 9, 13,...
 		//1+(N-1)*4;
 		int N = sc.nextInt();
-		star = new String[2*(1+(N-1)*4)][(1+(N-1)*4)];//2 [5][10];
+		star = new String[(1+(N-1)*4)][(1+(N-1)*4)];//2 [5][10];
 		
 		for(int i = 0 ; i < star.length; i++) {
 			for(int j = 0; j < star[i].length ; j ++) {
@@ -34,35 +34,18 @@ public class ddd {
 			star[startI][startJ] = "*";
 			return;
 		}else {
-			for(int i = startI ; i<2*(1+(N-1)*4); i++) {//3이면 9 012345678 0123456789 1011121314151617
-				for(int j = startJ; j<1+(N-1)*4; j++) {
-					if(i==startI||i==2*(1+(N-1)*4)-1) star[i][j] = "*";
+			for(int i = startI ; i<1+(N-1)*4+startI; i++) {//0일땐 ~흘러가고 5
+				for(int j = startJ; j<1+(N-1)*4 +startJ; j++) {
+					if(i==startI||i==(1+(N-1)*4)-1+startI) star[i][j] = "*";
 					else {
-						if(i%2!=0) {}
-						else if(j==startJ||j==(N-1)*4) star[i][j] = "*";
+						if(j==startJ||j==(N-1)*4+startJ) star[i][j] = "*";
 					}
-					
 				}
 			}
-			star(N-1, startI+4, startJ+2);
-		
-		
+			star(N-1, startI+2, startJ+2);
 	}
 	
-//	public static void main(String[] args) {
-		
-//		for(int i = 0 ; i < star.length ; i ++) {
-//			for(int j = 0; j < star[i].length ;j ++) {
-//				star[i][j] = " ";
-//			}
-//		}
-//		for(int i = 0 ; i < 5 ; i +=2) {
-//			for(int j = 0; j < 5 ;j ++) {
-//				if(i==0||i==4)
-//					star[i][j] = "*";
-//				else star[i][j] = "*";
-//			}
-//		}
+
 	}
 	
 	

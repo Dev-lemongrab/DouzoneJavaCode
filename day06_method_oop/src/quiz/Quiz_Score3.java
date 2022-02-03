@@ -10,6 +10,9 @@ public class Quiz_Score3 {
 
 	public static void main(String[] args) {
 		
+		Object[][] table = new Object[8][7];
+		setting(table);
+
 		//학생수
 		int cnt = 0;
 		//과목, 성적
@@ -18,8 +21,6 @@ public class Quiz_Score3 {
 		double avg;
 		String name;
 		//표 만들어 주기
-		Object[][] table = new Object[8][7];
-		setting(table);
 		
 		//성적입력받기
 		Main : while(true) {
