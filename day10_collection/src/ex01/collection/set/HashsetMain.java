@@ -31,13 +31,15 @@ class Person {
 	
 	
 	
+	
+	
 }//Person End
 public class HashsetMain {
 	public static void main(String[] args) {
 		Set set = new HashSet();
 		set.add(new Person("Yunseong", 31));
-		set.add(new Person("David", 20));
-		set.add(new Person("David", 20));
+		set.add(new Person("David", 20));//
+		set.add(new Person("David", 20));//2+20 
 		set.add(new Person("David", 10));
 		set.add(new Person("David", 10));
 		
@@ -45,5 +47,9 @@ public class HashsetMain {
 		set.add(new String("happy"));
 		
 		System.out.print(set);
+		Person p = new Person("", 12);
+		
+		
+		
 	}
 }
