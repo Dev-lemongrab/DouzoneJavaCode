@@ -1,4 +1,4 @@
-package quiz;
+package quiz_controller;
 
 import java.util.Scanner;
 

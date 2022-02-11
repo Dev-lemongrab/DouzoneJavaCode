@@ -1,4 +1,4 @@
-package quiz;
+package day11_io.src.quiz_io;
 
 /**
  * 문제] 비만도 측정 프로그램 작성하기 - collection,file io 이용하기

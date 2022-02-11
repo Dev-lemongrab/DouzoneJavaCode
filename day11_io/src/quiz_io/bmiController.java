@@ -1,4 +1,4 @@
-package quiz;
+package day11_io.src.quiz_io;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,4 +1,4 @@
-package quiz;
+package day11_io.src.quiz_io;
 
 
 import java.util.Scanner;
@@ -40,6 +40,7 @@ public class BmiMain {
 	public static void main(String[] args) {
 		BmiMain main = new BmiMain();
 		main.operation();
+
 	}
 	
 }

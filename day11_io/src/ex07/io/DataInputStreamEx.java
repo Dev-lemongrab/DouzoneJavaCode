@@ -1,4 +1,4 @@
-package ex07.io;
+package day11_io.src.ex07.io;
 
 import java.io.*;
 

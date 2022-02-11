@@ -1,4 +1,4 @@
-package quiz;
+package quiz_controller;
 
 public class Quiz_While01 {
 	//1+ 1+2 + 1+2+3 +...+ 5까지

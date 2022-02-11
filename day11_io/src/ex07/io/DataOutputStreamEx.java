@@ -1,4 +1,4 @@
-package ex07.io;
+package day11_io.src.ex07.io;
 import java.io.*;
 
 public class DataOutputStreamEx {
@@ -18,7 +18,7 @@ public class DataOutputStreamEx {
 		dos.flush(); // buffer
 		
 		System.out.println("test.txt 파일에" + 
-									dos.size() + "byte save");
+									dos.size() + " byte save");
 		dos.close();
 		
 	}

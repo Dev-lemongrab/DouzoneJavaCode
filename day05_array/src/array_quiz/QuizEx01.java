@@ -1,4 +1,4 @@
-package quiz;
+package array_quiz;
 
 import java.util.Scanner;
 
