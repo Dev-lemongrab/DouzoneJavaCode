@@ -14,7 +14,9 @@
 <details>
 <summary>특징</summary>
 <div markdown="1">       
- 
+1. dd
+2. ff
+ 3.fdfd
 </div>
 </details>
 
