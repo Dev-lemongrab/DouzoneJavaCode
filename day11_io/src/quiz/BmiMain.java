@@ -1,11 +1,6 @@
 package quiz;
 
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.lang.management.OperatingSystemMXBean;
-import java.rmi.server.Operation;
+
 import java.util.Scanner;
 
 public class BmiMain {
