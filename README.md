@@ -5,12 +5,19 @@
 ## Day1. 자바란? 
 
 <details>
-<summary>여기를 눌러주세요</summary>
+<summary>개념</summary>
 <div markdown="1">       
-> 💡 개념
->>
+ 
 </div>
 </details>
+
+<details>
+<summary>특징</summary>
+<div markdown="1">       
+ 
+</div>
+</details>
+
 
 ## Day2. DataType
 > 💡 개념
