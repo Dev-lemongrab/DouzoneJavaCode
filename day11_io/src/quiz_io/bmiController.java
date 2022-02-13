@@ -14,7 +14,7 @@ public class bmiController{
 	
 	public void calcPerson() {//bmi, 적정몸무게 계산
 		
-		
+		//test 주석입니다.
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		ObjectOutputStream  oos = null;
 		File f = new File("BmiList.txt");
