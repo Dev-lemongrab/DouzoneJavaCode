@@ -12,7 +12,6 @@
       <sourceFolder url="file://$MODULE_DIR$/day06_method_oop/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day07_oop/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day08_oop/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
