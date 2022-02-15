@@ -1,4 +1,4 @@
-package ex01.basic;
+package day02_basic.ex01.basic;
 
 public class FirstJava {
 

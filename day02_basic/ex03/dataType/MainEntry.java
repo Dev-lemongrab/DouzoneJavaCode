@@ -1,4 +1,4 @@
-package ex02.dataType;
+package day02_basic.ex03.dataType;
 
 public class MainEntry {
 	

@@ -58,7 +58,7 @@ public class MainEntry {
 //*/
 
 //*
-package ex03.dataType;
+package day02_basic.ex02.dataType;
 
 public class MainEntry {
 	
