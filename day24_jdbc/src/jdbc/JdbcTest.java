@@ -1,12 +1,10 @@
-package ex01.jdbc;
+package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-//import connUtil.*;
-
 public class JdbcTest {
-	static {
+    static {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
         } catch (Exception e) {
@@ -27,3 +25,4 @@ public class JdbcTest {
         }
     }
 }
+

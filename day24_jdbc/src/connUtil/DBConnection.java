@@ -1,5 +1,4 @@
-package day24_jdbc.src.connUtil;
-
+package connUtil;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -22,7 +21,8 @@ public class DBConnection {
 		Properties properties  = new Properties();
 		Reader reader;
 		try {
-			reader = new FileReader("/Users/macbookpro/douzone/java/workspace/day24_jdbc/src/connUtil/application.properties");  // 읽어올 파일 지정
+//			reader = new FileReader("D:/DouZone_th2/1_Java/workspace/day24_jdbc/src/ib/oracle.properties");  // 읽어올 파일 지정
+			reader = new FileReader("src/lib/oracle.properties"); 
 			properties.load(reader);                           // 설정 파일 로딩하기
 		} catch (FileNotFoundException e1) {
 			System.out.println("예외: 지정한 파일을 찾을수없습니다 :" + e1.getMessage());
@@ -38,9 +38,10 @@ public class DBConnection {
 
 		try {
 			Class.forName(driverName);
-			System.out.println("driver load ");
+//			System.out.println("drive load success");
 			conn = DriverManager.getConnection(url, user, pwd);
-			System.out.println("connection success");
+//			System.out.println("connection success!!!!");
+			
 		} catch (ClassNotFoundException e) {
 			System.out.println("예외: 드라이버로드 실패 :" + e.getMessage());
 			e.printStackTrace();
@@ -53,10 +54,7 @@ public class DBConnection {
 	public static Connection getConnection() {
 		return conn;
 	}
-
-	public static void main(String[] args) {
-		getConnection();
-	}
+	
 }
 
 
