@@ -14,7 +14,7 @@ public class GiftInsert {
 		
 		Connection conn = null;
 		Statement stmt = null;
-		ResultSet rs = null;
+		ResultSet rs = null; 
 		Scanner sc = new Scanner(System.in);
 		
 //		1. 드라이브 로드

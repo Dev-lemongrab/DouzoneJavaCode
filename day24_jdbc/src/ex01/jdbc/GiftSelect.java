@@ -16,8 +16,8 @@ public class GiftSelect {
 		ResultSet rs = null;
 		
 //		1. 드라이브 로드
-		conn = DBConnection.getConnection();
-		
+		conn = DBConnection.getConnection(); 
+		 
 //		2. Connection & Open
 							 //driver:@IP:portNumber:SID(or 전역데이터베이스명)   ==> "jdbc:oracle:thin:@localhost:1521:orcl";
 

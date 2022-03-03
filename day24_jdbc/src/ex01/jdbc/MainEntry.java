@@ -15,7 +15,7 @@ public class MainEntry {
 							 //driver:@IP:portNumber:SID(or 전역데이터베이스명)   ==> "jdbc:oracle:thin:@localhost:1521:orcl";
 		String url = "jdbc:oracle:thin:@kosadb_high?TNS_ADMIN=C:\\\\app\\\\Oracle\\\\Wallet_kosaDB";
 		String uid = "kingsmile";
-		String pwd = "xxxxxxAt22cc";
+		String pwd = "xxxxxxAt22cc"; 
 		
 		Connection conn = DriverManager.getConnection(url, uid, pwd);
 		System.out.println("connection success!");

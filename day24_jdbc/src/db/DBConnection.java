@@ -18,10 +18,10 @@ public class DBConnection {
 
     static {
         // 환경설정 파일을 읽어오기 위한 객체 생성
-        Properties properties  = new Properties();
+        Properties properties  = new Properties(); 
         Reader reader;
         try {
-            reader = new FileReader("D:/DouZone_th2/1_Java/workspace/day24_jdbc/src/lib/oracle.properties");  // 읽어올 파일 지정
+            reader = new FileReader("/Users/macbookpro/douzone/java/workspace/day24_jdbc/bin/lib/oracle.properties");  // 읽어올 파일 지정
             properties.load(reader);                           // 설정 파일 로딩하기
         } catch (FileNotFoundException e1) {
             System.out.println("예외: 지정한 파일을 찾을수없습니다 :" + e1.getMessage());

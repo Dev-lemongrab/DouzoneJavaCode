@@ -39,7 +39,7 @@ public class DBConnection {
 		try {
 			Class.forName(driverName);
 //			System.out.println("drive load success");
-			conn = DriverManager.getConnection(url, user, pwd);
+			conn = DriverManager.getConnection(url, user, pwd); 
 //			System.out.println("connection success!!!!");
 			
 		} catch (ClassNotFoundException e) {
@@ -54,7 +54,9 @@ public class DBConnection {
 	public static Connection getConnection() {
 		return conn;
 	}
-	
+	public static void main(String[] args) {
+		getConnection();
+	}
 }
 
 

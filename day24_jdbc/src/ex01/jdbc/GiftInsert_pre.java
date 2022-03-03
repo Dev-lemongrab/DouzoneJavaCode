@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 import connUtil.DBConnection;   // DB 연결 유틸리티 
 
-public class GiftInsert_pre {
+public class GiftInsert_pre { 
 	public static void main(String[] args) 	throws SQLException {
 		
 		Connection conn = null;
